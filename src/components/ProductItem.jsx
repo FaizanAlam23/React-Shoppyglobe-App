@@ -27,7 +27,7 @@ function ProductItem({ product }) {
     const originalPrice = (product.price / (1 - discountPercentage / 100)).toFixed(2);
 
     return (
-        <div className="bg-white shadow-md rounded-2xl p-5 border border-gray-200 transition-transform hover:scale-[1.03] hover:shadow-xl duration-300 relative">
+        <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-md rounded-2xl p-5 border border-gray-200 transition-transform hover:scale-[1.03] hover:shadow-2xl hover:border-blue-300 duration-300 relative">
             <Link to={`/product/${product.id}`} className="block">
                 <div className="relative">
                     <img
@@ -84,7 +84,7 @@ function ProductItem({ product }) {
             {/* Add to Cart Button */}
             <button
                 onClick={handleAddToCart}
-                className="mt-5 w-full bg-blue-600 text-white py-3 rounded-xl flex items-center justify-center gap-2 text-base font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md"
+                className="mt-5 w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white py-3 rounded-xl flex items-center justify-center gap-2 text-base font-semibold hover:from-blue-700 hover:to-indigo-700 transition duration-300 transform hover:scale-105 shadow-md"
             >
                 Add to Cart <FaShoppingCart size={20} />
             </button>

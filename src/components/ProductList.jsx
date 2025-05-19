@@ -4,7 +4,7 @@ import useFetch from "../hooks/useFetch";
 import LoadingSpinner from "./LoadingSpinner";
 
 function ProductList() {
-    const { loading, error, data } = useFetch("https://www.dummyjson.com/products");
+    const { loading, error, data } = useFetch("https://dummyjson.com/products");
     const [searchQuery, setSearchQuery] = useState("");
 
     if (loading) return <LoadingSpinner />;
@@ -32,7 +32,7 @@ function ProductList() {
             {/* Welcome Message */}
             <div className="text-center mb-12">
                 <h1 className="text-5xl font-extrabold text-gray-900 drop-shadow-sm">
-                    🛍 Welcome to <span className="text-blue-600">ShoppyGlobe</span>
+                    🛍 Shop Smart. Shop <span className="text-blue-600">ShoppyGlobe</span>
                 </h1>
                 <p className="text-lg text-gray-600 mt-3 max-w-2xl mx-auto font-semibold">
                     Discover high quality products at the best prices. Shop now and enjoy amazing deals! ✨
@@ -43,10 +43,10 @@ function ProductList() {
             <div className="max-w-xl mx-auto mb-10">
                 <input
                     type="text"
-                    placeholder="Search products..."
+                    placeholder="Search products here..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full px-5 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-5 py-3 bg-white border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
             </div>
 

@@ -9,7 +9,10 @@ import { Provider } from 'react-redux'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
-      <App />
+      <div className='min-h-screen bg-gradient-to-br from-purple-100 via-blue-200 to-blue-100'>
+        <App />
+      </div>
+      
     </Provider>
   </StrictMode>,
 )

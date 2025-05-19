@@ -17,7 +17,7 @@ function ProductDetail() {
     useEffect(() => {
         const fetchProduct = async () => {
             try {
-                const response = await fetch(`https://www.dummyjson.com/products/${id}`);
+                const response = await fetch(`https://dummyjson.com/products/${id}`);
                 if (!response.ok) {
                     throw new Error("Failed to fetch product details"); // Error handling for failed request
                 }
@@ -63,7 +63,7 @@ function ProductDetail() {
     }
 
     return (
-        <div className="max-w-4xl mx-auto p-8 bg-white shadow-lg rounded-lg font-sans">
+        <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-white via-blue-50 to-blue-100 shadow-md rounded-2xl border border-gray-200 font-sans">
             <div className="flex flex-col md:flex-row gap-6">
                 {/* Product Images */}
                 <div className="flex flex-col items-center md:w-1/2">
@@ -145,7 +145,7 @@ function ProductDetail() {
                     {/* Add to Cart Button */}
                     <button
                         onClick={() => handleAddToCart(product)}
-                        className="mt-5 w-full bg-blue-600 text-white py-3 rounded-lg flex items-center justify-center gap-2 text-lg font-semibold hover:bg-blue-700 transition duration-300 transform hover:scale-105 shadow-md"
+                        className="mt-5 w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white py-3 rounded-xl flex items-center justify-center gap-2 text-base font-semibold hover:from-blue-700 hover:to-indigo-700 transition duration-300 transform hover:scale-105 shadow-md"
                     >
                         Add to Cart <FaShoppingCart size={22} />
                     </button>

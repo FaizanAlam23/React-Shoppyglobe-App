@@ -183,7 +183,7 @@ function Checkout() {
                             {/* Submit Order Button */}
                             <button
                                 type="submit"
-                                className="mt-6 w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition duration-300 text-lg font-semibold shadow-md hover:scale-[1.02]"
+                                className="mt-5 w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white py-3 rounded-xl flex items-center justify-center gap-2 text-base font-semibold hover:from-blue-700 hover:to-indigo-700 transition duration-300 transform hover:scale-105 shadow-md hover:scale-[1.02]"
                             >
                                 🛒 Place Order
                             </button>

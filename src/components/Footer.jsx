@@ -2,10 +2,10 @@ import React from 'react';
 
 export default function Footer() {
   return (
-      <>
-      <div className='text-end p-3 h-20 bg-blue-200' >
-        <h2 className='m-4'><span className='font-bold'>©2025 Copyright:</span> Made By Faizan.</h2>
-      </div>
-      </>
+    <footer className="bg-gray-200 text-gray-800 text-center py-6 mt-auto border-t border-gray-300 shadow-sm">
+      <h2 className="text-sm sm:text-base">
+        <span className="font-semibold">©2025 Copyright:</span> Made By Faizan.
+      </h2>
+    </footer>
   );
 }

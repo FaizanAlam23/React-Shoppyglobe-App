@@ -12,7 +12,8 @@ function Cart() {
     const totalPrice = cartItem.reduce((total, item) => total + item.price * item.quantity, 0);
 
     return (
-        <div className="container mx-auto px-4 py-8 min-h-screen flex flex-col items-center bg-gray-50">
+        <div className="min-h-screen bg-gradient-to-br from-purple-100 via-blue-200 to-blue-100 px-6 py-10 flex flex-col items-center gap-6 shadow-inner">
+
             <h2 className="text-4xl font-extrabold text-gray-800 mb-10">Your Shopping Cart 🛒</h2>
 
             {/* If cart is empty, show message and button to return to homepage */}
@@ -23,7 +24,7 @@ function Cart() {
                     </p>
                     <Link
                         to="/"
-                        className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 shadow-md transform hover:scale-105">
+                        className="mt-5 w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white py-3 rounded-xl flex items-center justify-center gap-2 text-base font-semibold hover:from-blue-700 hover:to-indigo-700 transition duration-300 transform hover:scale-105 shadow-md">
                         Start Shopping
                     </Link>
                 </div>
@@ -51,7 +52,7 @@ function Cart() {
 
                         {/* Proceed to checkout link */}
                         <Link
-                            className="w-full block bg-blue-600 text-white py-3 rounded-lg text-lg font-semibold text-center hover:bg-blue-700 transition duration-300 transform hover:scale-105"
+                            className="mt-5 w-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white py-3 rounded-xl flex items-center justify-center gap-2 text-base font-semibold hover:from-blue-700 hover:to-indigo-700 transition duration-300 transform hover:scale-105 shadow-md"
                             to="/checkout">
                             Proceed to Checkout
                         </Link>

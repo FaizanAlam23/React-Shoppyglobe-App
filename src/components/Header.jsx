@@ -11,7 +11,7 @@ function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <header className="bg-gradient-to-r from-blue-900 to-indigo-800 text-white shadow-lg sticky top-0 z-50">
+        <header className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white shadow-lg sticky top-0 z-50">
             <div className="container mx-auto px-6 py-4 flex justify-between items-center relative">
                 {/* Logo */}
                 <Link
