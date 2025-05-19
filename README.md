@@ -68,7 +68,7 @@ Follow these steps to setup and run the project locally.
 
 ```bash
 git clone https://github.com/FaizanAlam23/React-Shoppyglobe-App
-cd shoppyglobe
+cd React-Shoppyglobe-App
 ```
 
 ### 2. Install Dependencies
