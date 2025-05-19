@@ -25,7 +25,7 @@ ShoppyGlobe is a basic yet functional e-commerce web application built with **Re
 
 ## 📁 Folder Structure
 
-react-shoppyglobe-app/
+React-Shoppyglobe-App/
 │
 ├── public/
 │   └── index.html
